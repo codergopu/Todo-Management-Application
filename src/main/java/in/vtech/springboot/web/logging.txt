@@ -1,0 +1,26 @@
+Logging
+~~~~~~~~~~~~~
+
+Knowing what to log is an essential skill to be a great programmer
+
+Spring Boot makes logging easy
+
+Dependency
+~~~~~~~~~~~~~
+spring-boot-starter-logging
+
+Default: Logback with SLF4J
+
+Typical Log Levels: ERROR, WARN, INFO, DEBUG or TRACE
+
+application.properties
+~~~~~~~~~~~~~~~~~~~~~~~~~
+logging.level.some.path= debug
+logging.level.some.other.path=error
+logging.file.name=logfile.log
+
+SYNTAX:
+~~~~~~~~~~~~~
+private Logger logger = LoggerFactory.getLogger(this.getClass());
+logger.info("SOMETHING INFO");
+logger.debug("SOMETHING DEBUG");
